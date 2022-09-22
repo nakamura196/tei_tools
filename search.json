@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "api.html",
+    "href": "api.html",
+    "title": "TEI Tools",
+    "section": "",
+    "text": "source"
+  },
+  {
+    "objectID": "api.html#準備",
+    "href": "api.html#準備",
+    "title": "TEI Tools",
+    "section": "準備",
+    "text": "準備\n\n\n!mkdir example\n!wget https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/main.xml -O example/main.xml\n\nmkdir: example: File exists\n--2022-09-22 18:33:25--  https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/main.xml\nwww.hi.u-tokyo.ac.jp (www.hi.u-tokyo.ac.jp) をDNSに問いあわせています... 52.197.208.150, 52.192.145.245\nwww.hi.u-tokyo.ac.jp (www.hi.u-tokyo.ac.jp)|52.197.208.150|:443 に接続しています... 接続しました。\nHTTP による接続要求を送信しました、応答を待っています... 200 OK\n長さ: 24518 (24K) [text/xml]\n`example/main.xml' に保存中\n\nexample/main.xml    100%[===================>]  23.94K  --.-KB/s 時間 0s         \n\n2022-09-22 18:33:25 (151 MB/s) - `example/main.xml' へ保存完了 [24518/24518]"
+  },
+  {
+    "objectID": "api.html#要素の分析",
+    "href": "api.html#要素の分析",
+    "title": "TEI Tools",
+    "section": "要素の分析",
+    "text": "要素の分析\nTEI/XMLに含まれる要素および属性を一覧します。\n\nsource\n\nTeiTools.analyze\n\n TeiTools.analyze (path, freq={})\n\n指定したファイルに含まれる要素および属性を抽出する\nParameters:\n* path: str - Path to the TEI/XML file\n* freq: dict - A dictionary to store the results\n\ninput_path = \"example/main.xml\"\nresults = TeiTools.analyze(input_path)\nresults\n\n{'teiHeader': {'fileDesc': {'none': 1},\n  'titleStmt': {'none': 1},\n  'title': {'none': 1},\n  'publicationStmt': {'none': 1},\n  'publisher': {'none': 1},\n  'sourceDesc': {'none': 1},\n  'listPerson': {'none': 1},\n  'person': {'xml:id': 9},\n  'persName': {'none': 9},\n  'note': {'type': 27, 'subtype': 1, 'source': 1},\n  'listPlace': {'none': 1},\n  'place': {'xml:id': 5},\n  'placeName': {'none': 5}},\n 'text': {'body': {'none': 1},\n  'div': {'type': 3, 'none': 2},\n  'ab': {'style': 14, 'type': 15, 'xml:id': 15, 'none': 2},\n  'lb': {'style': 14, 'none': 6},\n  'seg': {'type': 23, 'xml:id': 23},\n  'add': {'xml:id': 10},\n  'note': {'target': 4, 'type': 4},\n  'p': {'none': 6},\n  'persName': {'corresp': 9},\n  'name': {'type': 3, 'xml:id': 3},\n  'placeName': {'corresp': 5}},\n 'facsimile': {'surface': {'source': 1},\n  'zone': {'xml:id': 14, 'ulx': 14, 'uly': 14, 'lrx': 14, 'lry': 14}}}\n\n\n\nsource\n\n\nTeiTools.visualize\n\n TeiTools.visualize (data)\n\n指定したデータを可視化する\nParameters:\n* data: dict - Data to visualize\n\nTeiTools.visualize(results)\n\n\nsource\n\n\nTeiTools.analyzeDir\n\n TeiTools.analyzeDir (path)\n\n指定したパスに含まれるXMLファイルに含まれる要素および属性を抽出する\nParameters:\n* path: str - Path to the TEI/XML file e.g. “data/*.xml”\n\ninput_path = \"example/*.xml\"\nresults = TeiTools.analyzeDir(input_path)\nresults\n\n{'teiHeader': {'fileDesc': {'none': 2},\n  'titleStmt': {'none': 2},\n  'title': {'none': 2},\n  'publicationStmt': {'none': 2},\n  'publisher': {'none': 2},\n  'sourceDesc': {'none': 2},\n  'listPerson': {'none': 2},\n  'person': {'xml:id': 18},\n  'persName': {'none': 18},\n  'note': {'type': 54, 'subtype': 2, 'source': 2},\n  'listPlace': {'none': 2},\n  'place': {'xml:id': 10},\n  'placeName': {'none': 10},\n  'seg': {'none': 45},\n  'w': {'none': 2855}},\n 'text': {'body': {'none': 2},\n  'div': {'type': 6, 'none': 4},\n  'ab': {'style': 28, 'type': 30, 'xml:id': 30, 'none': 4},\n  'lb': {'style': 28, 'none': 12},\n  'seg': {'type': 46, 'xml:id': 46, 'none': 111},\n  'add': {'xml:id': 20},\n  'note': {'target': 8, 'type': 8},\n  'p': {'none': 12},\n  'persName': {'corresp': 18},\n  'name': {'type': 6, 'xml:id': 6},\n  'placeName': {'corresp': 10},\n  'w': {'none': 2120}},\n 'facsimile': {'surface': {'source': 2},\n  'zone': {'xml:id': 28, 'ulx': 28, 'uly': 28, 'lrx': 28, 'lry': 28}}}\n\n\n\nTeiTools.visualize(results)"
+  },
+  {
+    "objectID": "api.html#wordタグを付与する",
+    "href": "api.html#wordタグを付与する",
+    "title": "TEI Tools",
+    "section": "wordタグを付与する",
+    "text": "wordタグを付与する\n\nsource\n\nTeiTools.addWordElement\n\n TeiTools.addWordElement (path, target='TEI')\n\n指定したファイルに含まれるwordにタグを付与する\nParameters:\n* path: str - Path to the TEI/XML file\n* target: str - Target element name to add word element\nReturns:\n* str - The modified XML file\n\ninput_path = \"example/main.xml\"\nsoup = TeiTools.addWordElement(input_path)\nTeiTools.save(\"example/main2.xml\", soup)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tei_tools",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "tei_tools",
+    "section": "Install",
+    "text": "Install\npip install tei_tools"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "tei_tools",
+    "section": "How to use",
+    "text": "How to use\nSee the documentation for full details of the API Client.\n\n# !mkdir example\n# !wget https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/main.xml -O example/main.xml \ninput_path = \"example/main.xml\"\nresults = TeiTools.analyze(input_path)\n# TeiTools.visualize(results)\nresults\n\n{'teiHeader': {'fileDesc': {'none': 3},\n  'titleStmt': {'none': 3},\n  'title': {'none': 3},\n  'publicationStmt': {'none': 3},\n  'publisher': {'none': 3},\n  'sourceDesc': {'none': 3},\n  'listPerson': {'none': 3},\n  'person': {'xml:id': 27},\n  'persName': {'none': 27},\n  'note': {'type': 81, 'subtype': 3, 'source': 3},\n  'listPlace': {'none': 3},\n  'place': {'xml:id': 15},\n  'placeName': {'none': 15}},\n 'text': {'body': {'none': 3},\n  'div': {'type': 9, 'none': 6},\n  'ab': {'style': 42, 'type': 45, 'xml:id': 45, 'none': 6},\n  'lb': {'style': 42, 'none': 18},\n  'seg': {'type': 69, 'xml:id': 69},\n  'add': {'xml:id': 30},\n  'note': {'target': 12, 'type': 12},\n  'p': {'none': 18},\n  'persName': {'corresp': 27},\n  'name': {'type': 9, 'xml:id': 9},\n  'placeName': {'corresp': 15}},\n 'facsimile': {'surface': {'source': 3},\n  'zone': {'xml:id': 42, 'ulx': 42, 'uly': 42, 'lrx': 42, 'lry': 42}}}"
+  },
+  {
+    "objectID": "index.html#wordタグの付与",
+    "href": "index.html#wordタグの付与",
+    "title": "tei_tools",
+    "section": "Wordタグの付与",
+    "text": "Wordタグの付与\nXMLファイルに含まれる文字列に対して、wタグを付与します。\n\ninput_path = \"example/main.xml\"\nresults = TeiTools.addWordElement(input_path)\nTeiTools.save(\"example/main_with_word.xml\", results)"
+  }
+]
