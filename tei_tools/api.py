@@ -13,17 +13,6 @@ class TeiTools:
         pass
 
     @staticmethod
-    def hello_world(title):
-        '''
-        This is a static method that prints "Hello World"
-        
-        Parameters:  
-        * title: str  -  The title of the book
-        '''
-        
-        print("Hello World")
-
-    @staticmethod
     def analyze(path, freq={}):
         '''
         指定したファイルに含まれる要素および属性を抽出する
@@ -125,3 +114,53 @@ class TeiTools:
             freq = TeiTools.analyze(file, freq=freq)
 
         return freq
+
+    @staticmethod
+    def addWordElement(path, target="TEI"):
+        '''
+        指定したファイルに含まれるwordにタグを付与する
+        
+        Parameters:  
+        * path: str  -  Path to the TEI/XML file  
+        * target: str  -  Target element name to add word element
+
+        Returns:  
+        * str  -  The modified XML file
+        '''
+
+        soup = BeautifulSoup(open(path,'r'), "xml")
+
+        elements = soup.find(target).findChildren(text=True, recursive=True)
+
+        for element in elements:
+            text = element.string.strip()
+            if text == "":
+                continue
+
+            seg = soup.new_tag("seg")
+
+            for i in range(len(text)):
+                w = text[i:i+1]
+
+                w = soup.new_tag("w")
+                w.string = text[i:i+1]
+
+                seg.append(w)
+
+            element.replace_with(seg)
+
+        return soup
+
+    @staticmethod
+    def save(path, soup):
+        '''
+        指定したパスにBeautifulSoupオブジェクトを保存する
+        
+        Parameters:  
+        * path: str  -  Path to the TEI/XML file
+        * soup: BeautifulSoup  -  The modified XML file
+        '''
+
+        f = open(path, 'w')
+        f.write(soup.prettify())
+        f.close()
