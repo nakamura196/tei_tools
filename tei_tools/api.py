@@ -15,26 +15,27 @@ class TeiTools:
         '''
         This is a static method that prints "Hello World"
         
-        Parameters:
+        Parameters:  
         * title: str  -  The title of the book
         '''
         
         print("Hello World")
 
     @staticmethod
-    def analyze(path):
+    def analyze(path, freq={}):
         '''
         指定したファイルに含まれる要素および属性を抽出する
         
-        Parameters:
-        * path: str  -  Path to the TEI/XML file
+        Parameters:  
+        * path: str  -  Path to the TEI/XML file  
+        * freq: dict  -  A dictionary to store the results
         '''
 
         soup = BeautifulSoup(open(path,'r'), "xml")
             
         children = soup.find("TEI").findChildren(recursive=False)
 
-        freq = {}
+        # freq = {}
 
         for child in children:
             p = child.name
@@ -64,4 +65,55 @@ class TeiTools:
                         m[name][field] = 0
                     m[name][field] += 1
         
+        return freq
+
+    @staticmethod
+    def visualize(data):
+        '''
+        指定したデータを可視化する
+        
+        Parameters:  
+        * data: dict  -  Data to visualize
+        '''
+
+        # a = range(0, 7)
+        # b = [55,21,61,98,85,52,99]
+
+        freq = {}
+        for group in data:
+            # count = 0
+            # pprint(data[key])
+            for element in data[group]:
+                for attr in data[group][element]:
+                    if element not in freq:
+                        freq[element] = 0
+                    freq[element] += data[group][element][attr]
+
+        # 値の多い順にソート
+        freq = {k: v for k, v in sorted(freq.items(), key=lambda item: item[1])}
+
+        a = []
+        b = []
+        for key in freq:
+            a.append(key)
+            b.append(freq[key])
+        plt.barh(a, b)
+        plt.show()
+
+    @staticmethod
+    def analyzeDir(path):
+        '''
+        指定したパスに含まれるXMLファイルに含まれる要素および属性を抽出する
+        
+        Parameters:  
+        * path: str  -  Path to the TEI/XML file e.g. "data/*.xml"
+        '''
+
+        freq = {}
+
+        files = glob.glob(path, recursive=True)
+
+        for file in files:
+            freq = TeiTools.analyze(file, freq=freq)
+
         return freq

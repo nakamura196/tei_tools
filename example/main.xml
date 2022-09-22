@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>蒋洲咨文</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>東京大学史料編纂所</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <listPerson>
+                    <person xml:id="蒋洲">
+                        <persName>蒋洲</persName>
+                        <note type="schema:description">字は宗信。号は龍渓。浙江寧波府鄞県出身。嘉靖34年（1555）、浙江巡撫（のち浙直総督）胡宗憲に起用され、当時平戸に拠点を置いていた王直を招撫し、また日本国王に倭寇禁圧を求めることを目的とした使者として日本に渡航した。王直と会見して帰国を承諾させ、ついで王直とともに大友義鎮のもとに赴き、嘉靖36年（1557）大友氏使者を伴って帰国したが、明朝内の政情変化により投獄され、王直も誅殺された。嘉靖39年（1560）許され、隆慶六年（1572）死去した。その日本渡航による見聞知識は、胡宗憲幕下の鄭若曾が編纂した『日本図纂』『籌海図編』に生かされている。</note>
+                        <note type="schema:url">https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=30010zz245830</note>
+                    </person>
+                    <person xml:id="蒋海">
+                        <persName>蒋海</persName>
+                        <note type="schema:description">不詳</note>
+                    </person>
+                    <person xml:id="胡節忠">
+                        <persName>胡節忠</persName>
+                        <note type="schema:description">不詳</note>
+                    </person>
+                    <person xml:id="李御">
+                        <persName>李御</persName>
+                        <note type="schema:description">不詳</note>
+                    </person>
+                    <person xml:id="陳桂">
+                        <persName>陳桂</persName>
+                        <note type="schema:description">不詳</note>
+                    </person>
+                    <person xml:id="徳陽">
+                        <persName>徳陽</persName>
+                        <note type="schema:description">本件に関する以外の事績は不詳。この後、実際に大友義鎮の使者として明に赴いたことは『明実録』などから確認できる。</note>
+                    </person>
+                    <person xml:id="呉四郎">
+                        <persName>呉四郎</persName>
+                        <note type="schema:description">広東海陽県彩塘の人で日本に流寓していたという（小葉田淳『中世日支通交貿易史の研究』刀江書院、1969年、四五九頁）。</note>
+                    </person>
+                    <person xml:id="大友義鎮">
+                        <persName>大友義鎮</persName>
+                        <note type="schema:description">蒋洲来日時の豊後大友氏の当主は義鎮（のち宗麟）で、具体的には彼を指す。享禄3年（1530）生まれ。天文19年（1550）家督を継いだ。大内氏勢力退潮後の九州攻略を積極的に進め、永禄2年（1559）には従来の豊後・筑後・肥後・肥前に加え、筑前・豊前守護職および九州探題職も与えられ、大友氏の黄金時代を築いたが、晩年は島津氏におされ、豊臣秀吉の九州侵攻により滅亡の難を逃れた直後の天正15年（1587）5月に死去した。京都大徳寺瑞峯院に怡雲宗悦著賛の肖像画が残されており、本所にはその模写が所蔵される。</note>
+                        <note type="schema:url">https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=30010zz073120</note>
+                        <note type="schema:description">大友義鎮の拠点：豊後府内（現大分市）。大友氏館跡として地名辞典に立項あり。（ジャパンナレッジID：30020450000192500）</note>
+                        <!-- <note type="schema:description">https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=30020450000192500</note> -->
+                        <note type="schema:image" subtype="東京大学史料編纂所" source="https://clioimg.hi.u-tokyo.ac.jp/viewer/view/idata/0M0/_102ro_/150/00000001">https://clioimg.hi.u-tokyo.ac.jp/viewer/api/image/idata/0M0/_102ro_/150/00000001.tif/0,2436,2304,2280/200,/0/default.jpg</note>
+                    </person>
+                    <person xml:id="宗義調">
+                        <persName>宗義調</persName>
+                        <note type="schema:description">当時対馬島を支配していたのは宗氏、時の当主は義調で、本文書を実際に受け取ったのは宗義調である。天文元年（1532）生まれ。天文22年（1553）家督を継いだ。朝鮮との通交貿易の安定に努めて、倭寇情報の朝鮮王朝への提供に意を用い、本文書の到来についても朝鮮王朝に報告している。天正15年（1587）豊臣秀吉の九州侵攻にあたり、自ら陣所に赴いて対馬一円の知行を許されたが、翌年（1588）死去した。</note>
+                        <note type="schema:url">https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=30010zz285430</note>
+                        <!-- <note subtype="ウィキぺディア" type="schema:image" source="https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:S%C5%8D_Yoshishige01.jpg">https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/S%C5%8D_Yoshishige01.jpg/345px-S%C5%8D_Yoshishige01.jpg</note> -->
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place xml:id="五島">
+                        <placeName>五島</placeName>
+                        <note type="schema:description">福江・久賀・奈留・若松・中通島と連なる五島列島を中心とし、時に宇久・小値賀島なども含む広域地名としても用いられる。古来中国大陸への玄関口であり、室町時代、遣明船は五島より東シナ海に漕ぎ出し、五島を目指して帰国した。</note>
+                        <note type="schema:url">https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=30020430000179500</note>
+                        <note type="schema:geo">五島.json</note>
+                    </place>
+                    <place xml:id="松浦">
+                        <placeName>松浦</placeName>
+                        <note type="schema:description">現在の長崎県・佐賀県の玄界灘に面する陸地部および島嶼部に加え、五島列島をも含みこむ広域地名。旧松浦郡は長崎県北松浦郡・南松浦郡・佐世保市・松浦市・平戸市・福江市・佐賀県東松浦郡・唐津市・西松浦郡・伊万里市までを郡域とした。なお蒋洲の招撫対象であった王直は当時平戸を拠点としていた。</note>
+                        <note type="schema:url">https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=30020420000007100</note>
+                        <note type="schema:geo">https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/geojson/松浦.json</note>
+                    </place>
+                    <place xml:id="博多">
+                        <placeName>博多</placeName>
+                        <note type="schema:description">狭義には那珂川と石堂川にはさまれた砂州部を指すが、博多湾とそれに面する陸地部分を含む広域地名としても用いられる。大宰府の外港として発展し、古来対外交流の拠点として、また物資の集散港として機能した。日宋・日元貿易の時代には中国海商も多く居を構え、室町時代には遣明船の艤装基地の一つであった。</note>
+                        <note type="schema:url">https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=30020410000150900</note>
+                        <note type="schema:geo">https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/geojson/博多.json</note>
+                    </place>
+                    <place xml:id="豊後">
+                        <placeName>豊後</placeName>
+                        <note type="schema:description">現在の大分県。鎌倉時代以降16世紀末まではおおむね大友氏の支配下にあった。大友氏は大分川河口部の豊後府内に拠点をおいて豊後をはじめとする数か国を支配し、また博多にも権益を持った。</note>
+                        <note type="schema:geo">https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/geojson/豊後.json</note>
+                    </place>
+                    <place xml:id="対馬島">
+                        <placeName>対馬島</placeName>
+                        <note type="schema:description">現在の長崎県対馬市。中近世を通じて宗氏の支配下にあった。朝鮮半島と距離が近く、前期倭寇の時期には高麗・朝鮮王朝側からはしばしば倭寇の拠点とも見なされた。</note>
+                        <note type="schema:geo">https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/geojson/対馬島.json</note>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="original">
+                <div>
+
+                    <!-- ab + 上部に1文字分スペース -->
+                    <ab style="margin-top: 2rem;
+      text-indent: -1rem;">
+                        <lb style="display: none"/>
+                        <seg type="parallel" xml:id="o-0001">大明副使蒋　承奉</seg>
+                    </ab>
+
+                    <ab style="margin-top: 2rem;
+      text-indent: -2rem;" type="parallel" xml:id="o-0002">
+                        <lb style="display: none"/>
+欽差督察総制提督浙江等処軍務各衙門、為因近年以来、日本各島小民、仮以買売為名、屡犯
+                    </ab>
+
+                    <ab style="margin-top: 2rem;
+      text-indent: -1rem;" type="parallel" xml:id="o-0003">
+                        <lb style="display: none"/>
+中国辺境、刼掠居民、奉
+                    </ab>
+
+                    <ab style="margin-top: 2rem;
+      text-indent: -2rem;" type="parallel" xml:id="o-0004">
+                        <lb style="display: none"/>
+旨、議行浙江等処承宣布政使司、転行本職、親詣
+                    </ab>
+
+                    <ab type="parallel" xml:id="o-0005" style="margin-top: 2em;">
+                        <lb style="display: none"/>
+貴国面議等因、奉此、帯同義士蒋海・胡節忠・李御・陳桂、自旧年十一月十一日、来至五島、由松浦・博多、已往豊後
+                    </ab>
+
+                    <ab type="parallel" xml:id="o-0006" style="margin-top: 2em;">
+                        <lb style="display: none"/>
+大友氏会議、即蒙遍行禁制各島賊徒、備有回文、撥船遣僧徳陽首座等、進
+                    </ab>
+
+                    <ab type="parallel" xml:id="o-0007" style="margin-top: 2rem;
+      text-indent: -1rem;">
+                        <lb style="display: none"/>
+表貢物、所有発行爾島禁賊御書見在、特行備礼、就差通事呉四郎、前詣投逓、爾即当躰
+                    </ab>
+
+                    <ab type="parallel" xml:id="o-0008" style="margin-top: 2em;">
+                        <lb style="display: none"/>
+貴国之政條、憤部民之横行、分投遣                        <add xml:id="note01">人</add>、厳加禁制、不許小民私出海洋、侵擾
+                    </ab>
+                    <note target="#note01" type="translatorsNotes">
+                        <p>『江雲随筆』（東京大学史料編纂所所蔵謄写本【請求記号】2351-3）から補充、また群書類従本の続善隣国宝記にも所収あり（ジャパンナレッジID：91021V600404）</p>
+                    </note>
+
+                    <ab type="parallel" xml:id="o-0009" style="margin-top: 2rem;
+      text-indent: -1rem;">
+                        <lb style="display: none"/>
+中国、俾                        <add xml:id="note01">辺</add>境寧静、釁隙不生、共享和平之福、史冊書美、光伝百世、豈不快哉、否則奸商島                        <add xml:id="note01">民</add>、扇                        <add xml:id="note01">構</add>不已、党類益繁、盤                        <add xml:id="note01">拠</add>海島、窺隙竊発、恐非
+                    </ab>
+
+                    <ab type="parallel" xml:id="o-0010" style="margin-top: 2em;">
+                        <lb style="display: none"/>
+貴                        <add xml:id="note01">国之利、如昔</add>年安南国陳氏之                        <add xml:id="note01">俗</add>、可鑑矣、今特移文併知、非特為
+                    </ab>
+
+                    <ab type="parallel" xml:id="o-0011" style="margin-top: 2rem;
+      text-indent: -1rem;">
+                        <lb style="display: none"/>
+中国也、                        <add xml:id="note01">惟深体</add>而速行之、希即回文、須至咨者、
+                    </ab>
+
+
+
+                </div>
+                <div>
+                    <lb/>
+                    <lb/>
+                    <ab type="parallel" xml:id="o-0012" style="margin-top: 2em;">
+                        <lb style="display: none"/>
+右　　　　　　　　　咨
+
+                    </ab>
+                    <lb/>
+                    <ab type="parallel" xml:id="o-0013" style="margin-top: 2em;">
+                        <lb style="display: none"/>
+日　本　国　対　馬　島
+
+                    </ab>
+                    <lb/>
+                    <lb/>
+                    <ab type="parallel" xml:id="o-0014" style="margin-top: 2em;">
+                        <lb style="display: none"/>
+嘉                        <add xml:id="note01">靖</add>参拾伍年                        <add xml:id="note01">拾</add>壱月　初三　日
+
+                        <lb/>
+□　　　　　（押署）
+
+                    </ab>
+                </div>
+            </div>
+
+            <div type="yomikudashi">
+                <ab>
+                    <seg type="parallel" xml:id="y-0001">
+                        <persName corresp="#蒋洲">大明副使蒋</persName>　承奉すらく
+                    </seg>、                    <seg type="parallel" xml:id="y-0002">
+                        <name type="keyword" xml:id="name-0001">欽差督察総制提督浙江等処軍務各衙門</name>
+                        <note target="#name-0001" type="nameNotes">
+                            <p>皇帝の命を受けて派遣された、浙江地域の軍務を司る各役所を総督する官僚、の意。蒋洲を派遣したのは、当時浙江巡撫の任にあった胡宗憲という人物であり、具体的には彼を指すと考えられる。</p>
+                        </note>、近年以来、日本各島小民、仮るに買売を以て名と為し
+                    </seg>、                    <seg type="parallel" xml:id="y-0003">しばしば中国辺境を犯し、居民を刼掠するを因となし、旨を奉じて</seg>、                    <seg type="parallel" xml:id="y-0004">
+                        <name type="keyword" xml:id="name-0002">浙江等処承宣布政使司</name>
+                        <note target="#name-0002" type="nameNotes">
+                            <p>浙江地域の行政を司る役所。</p>
+                        </note>に議行し、本職に転行して
+                    </seg>、                    <seg type="parallel" xml:id="y-0005">親しく貴国に詣り面議せしめん等の因あり。此を奉じて、義士                        <persName corresp="#蒋海">蒋海</persName>・                        <persName corresp="#胡節忠">胡節忠</persName>・                        <persName corresp="#李御">李御</persName>・                        <persName corresp="#陳桂">陳桂</persName>を帯同し、旧年十一月十一日、来たりて                        <placeName corresp="#五島">五島</placeName>に至り、                        <placeName corresp="#松浦">松浦</placeName>・                        <placeName corresp="#博多">博多</placeName>に由り
+                    </seg>、                    <seg type="parallel" xml:id="y-0006">すでに                        <persName corresp="#大友義鎮">豊後大友氏</persName>に往きて会議す。すなわち蒙るに、あまねく禁制を各島賊徒に行ない、回文を備有し、船を撥して、僧                        <persName corresp="徳陽">徳陽</persName>首座等を遣わし
+                    </seg>、                    <seg type="parallel" xml:id="y-0007">表・貢物を進めんとす、と。あらゆる爾の島に発行し賊を禁ぜしむる御書は見在せり。特に備礼を行ない、通事                        <persName corresp="呉四郎">呉四郎</persName>を就差して、前に詣りて投逓せしむ。爾すなわちまさに
+                    </seg>
+                    <seg type="parallel" xml:id="y-0008">貴国の政条を体し、部民の横行を憤り、分投して人を遣し、厳に禁制を加え、小民の私に海洋に出で</seg>、                    <seg type="parallel" xml:id="y-0009">中国を侵擾するを許さず、辺境をして寧静ならしめ、釁隙を生まざれば、共に和平の福を享け、史冊は美を書し、光は百世に伝わらん。あに快ならざらんや。否なればすなわち奸商島民、扇構して已まず、党類ますます繁くして、海島に盤拠し、隙を窺いひそかに発せん。</seg>
+                    <seg type="parallel" xml:id="y-0010">恐らくは貴国の利に非ず。昔年                        <name type="keyword" xml:id="name-0003">安南国陳氏の俗</name>
+                        <note target="#name-0003" type="nameNotes">
+                            <p>安南国（ベトナム）の陳氏が、外戚の黎季犛（のち胡季犛と改名）に安南国王（大越皇帝）の座を追われ、その後この胡氏政権の安南国（大虞王朝）が、永楽帝の送った遠征軍により倒されて明に併合された故事を指す。</p>
+                            <p>陳朝（ジャパンナレッジID: 1001000152914）</p>
+                            <p>黎季犛（ジャパンナレッジID: 52030300930t088530_000）</p>
+                        </note>の如き、鑑るべきなり。今特に移文して併知するは
+                    </seg>、                    <seg type="parallel" xml:id="y-0011">ただに中国のために非ざるなり。ただ深く体して速やかに之を行ない、希わくばすなわち回文せよ。すべからく咨に至るべき者なり。</seg>
+                </ab>
+                <ab type="parallel" xml:id="y-0012">右、                    <persName corresp="#宗義調">日本国対馬島</persName>に咨す。
+                </ab>
+
+
+            </div>
+
+            <div type="japanese">
+                <ab>
+                    <seg type="parallel" xml:id="ja-0001">大明副使蒋（洲）が謹んで承ることには</seg>、                    <seg type="parallel" xml:id="ja-0002">近年、日本各島の民衆が売買に名を借りて</seg>、                    <seg type="parallel" xml:id="ja-0003">しばしば中国辺境を犯し、住民を掠奪しているので</seg>、                    <seg type="parallel" xml:id="ja-0004">欽差督察総制提督浙江等処軍務各衙門は、（皇帝の）旨をうけて、浙江等処承宣布政使司に検討させ、本職（大明副使蒋洲）に命じて</seg>、                    <seg type="parallel" xml:id="ja-0005">直接貴国に至らせ、対面のうえ協議させることにしたということだ。このことを奉じて、（私こと蒋洲は）義士蒋海・胡節忠・李御・陳桂を帯同し、旧年十一月十一日、五島に至り、松浦・博多を経由して</seg>、                    <seg type="parallel" xml:id="ja-0006"><placeName corresp="#豊後">豊後</placeName>大友氏のもとに至り会って議論した。そして（大友氏が）各島の賊徒をすべて取り締まり、（明朝への）回文を用意し、船を仕立てて徳陽首座等を遣わして</seg>、                    <seg type="parallel" xml:id="ja-0007">（明朝に）表・貢物を進めようという意向を得た。すべての爾の島に対して発行し賊を禁じた御書はここにある。特に礼儀を尽くして、通事呉四郎を遣わし、（                        <placeName corresp="#対馬島">対馬島</placeName>まで）至って伝送させようとするものである。爾は
+                    </seg>
+                    <seg type="parallel" xml:id="ja-0008">貴国の法を奉じて、管轄する民の横行を怒り、方々に人を遣して、厳重に禁制を加え、民衆が勝手に海洋に出て</seg>、                    <seg type="parallel" xml:id="ja-0009">中国を侵擾するのを許さず、辺境を平穏にして、争いを生まないようにしたならば、共に和平の福を享受し、歴史に美談と語り継がれることであろう。どうして（そのことが）快でないことがあろうか。そうしなければ、奸商・島民はお互いに煽って、ますます蔓延り、海島に蟠踞し、隙を窺ってはひそかに（中国に向けて）出発することになろう。</seg>
+                    <seg type="parallel" xml:id="ja-0010">（そのことは）おそらくは貴国のためにならない。安南国陳氏の故事に鑑みるべきである。今特に書を遣わして知らせるのは、単に中国のためだけではない。</seg>
+                    <seg type="parallel" xml:id="ja-0011">ただこのことを深く心にとどめて速やかに賊徒の取り締まりを行ない、願わくば返事をよこすように。かならず咨に従うように。以上。</seg>
+                </ab>
+                <ab type="parallel" xml:id="ja-0012">
+右、日本国対馬島に咨す。
+                </ab>
+
+
+            </div>
+        </body>
+    </text>
+    <facsimile source="https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/iiif/main/manifest.json">
+        <surface source="https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/iiif/main/canvas/p1">
+            <zone xml:id="z-0001" ulx="2776" uly="536" lrx="2864" lry="1096"/>
+            <zone xml:id="z-0002" ulx="2640" uly="460" lrx="2752" lry="2744"/>
+            <zone xml:id="z-0003" ulx="2548" uly="524" lrx="2656" lry="1128"/>
+            <zone xml:id="z-0004" ulx="2416" uly="456" lrx="2528" lry="1672"/>
+            <zone xml:id="z-0005" ulx="2276" uly="572" lrx="2400" lry="2964"/>
+            <zone xml:id="z-0006" ulx="2164" uly="576" lrx="2272" lry="2308"/>
+            <zone xml:id="z-0007" ulx="2044" uly="492" lrx="2160" lry="2560"/>
+            <zone xml:id="z-0008" ulx="1928" uly="588" lrx="2048" lry="2216"/>
+            <zone xml:id="z-0009" ulx="1808" uly="488" lrx="1928" lry="3552"/>
+            <zone xml:id="z-0010" ulx="1696" uly="592" lrx="1804" lry="2124"/>
+            <zone xml:id="z-0011" ulx="1576" uly="512" lrx="1684" lry="1612"/>
+            <zone xml:id="z-0012" ulx="1192" uly="560" lrx="1324" lry="1400"/>
+            <zone xml:id="z-0013" ulx="956" uly="576" lrx="1080" lry="1400"/>
+            <zone xml:id="z-0014" ulx="128" uly="508" lrx="828" lry="1988"/>
+        </surface>
+    </facsimile>
+</TEI>
