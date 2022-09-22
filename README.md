@@ -19,7 +19,37 @@ documentation](https://nakamura196.github.io/tei_tools/api.html) for
 full details of the API Client.
 
 ``` python
-1+1
+# !mkdir example
+# !wget https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/wakozukan/tei/data/main.xml -O example/main.xml 
+input_path = "example/main.xml"
+results = TeiTools.analyze(input_path)
+# TeiTools.visualize(results)
+results
 ```
 
-    2
+    {'teiHeader': {'fileDesc': {'none': 4},
+      'titleStmt': {'none': 4},
+      'title': {'none': 4},
+      'publicationStmt': {'none': 4},
+      'publisher': {'none': 4},
+      'sourceDesc': {'none': 4},
+      'listPerson': {'none': 4},
+      'person': {'xml:id': 36},
+      'persName': {'none': 36},
+      'note': {'type': 108, 'subtype': 4, 'source': 4},
+      'listPlace': {'none': 4},
+      'place': {'xml:id': 20},
+      'placeName': {'none': 20}},
+     'text': {'body': {'none': 4},
+      'div': {'type': 12, 'none': 8},
+      'ab': {'style': 56, 'type': 60, 'xml:id': 60, 'none': 8},
+      'lb': {'style': 56, 'none': 24},
+      'seg': {'type': 92, 'xml:id': 92},
+      'add': {'xml:id': 40},
+      'note': {'target': 16, 'type': 16},
+      'p': {'none': 24},
+      'persName': {'corresp': 36},
+      'name': {'type': 12, 'xml:id': 12},
+      'placeName': {'corresp': 20}},
+     'facsimile': {'surface': {'source': 4},
+      'zone': {'xml:id': 56, 'ulx': 56, 'uly': 56, 'lrx': 56, 'lry': 56}}}

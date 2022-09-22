@@ -4,6 +4,8 @@
 __all__ = ['TeiTools']
 
 # %% ../api.ipynb 3
+from bs4 import BeautifulSoup
+
 class TeiTools:
     def __init__(self):
         '''
@@ -76,6 +78,8 @@ class TeiTools:
         * data: dict  -  Data to visualize
         '''
 
+        '''
+
         # a = range(0, 7)
         # b = [55,21,61,98,85,52,99]
 
@@ -99,6 +103,10 @@ class TeiTools:
             b.append(freq[key])
         plt.barh(a, b)
         plt.show()
+
+        '''
+
+        pass
 
     @staticmethod
     def analyzeDir(path):
