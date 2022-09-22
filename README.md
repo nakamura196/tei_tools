@@ -27,29 +27,39 @@ results = TeiTools.analyze(input_path)
 results
 ```
 
-    {'teiHeader': {'fileDesc': {'none': 4},
-      'titleStmt': {'none': 4},
-      'title': {'none': 4},
-      'publicationStmt': {'none': 4},
-      'publisher': {'none': 4},
-      'sourceDesc': {'none': 4},
-      'listPerson': {'none': 4},
-      'person': {'xml:id': 36},
-      'persName': {'none': 36},
-      'note': {'type': 108, 'subtype': 4, 'source': 4},
-      'listPlace': {'none': 4},
-      'place': {'xml:id': 20},
-      'placeName': {'none': 20}},
-     'text': {'body': {'none': 4},
-      'div': {'type': 12, 'none': 8},
-      'ab': {'style': 56, 'type': 60, 'xml:id': 60, 'none': 8},
-      'lb': {'style': 56, 'none': 24},
-      'seg': {'type': 92, 'xml:id': 92},
-      'add': {'xml:id': 40},
-      'note': {'target': 16, 'type': 16},
-      'p': {'none': 24},
-      'persName': {'corresp': 36},
-      'name': {'type': 12, 'xml:id': 12},
-      'placeName': {'corresp': 20}},
-     'facsimile': {'surface': {'source': 4},
-      'zone': {'xml:id': 56, 'ulx': 56, 'uly': 56, 'lrx': 56, 'lry': 56}}}
+    {'teiHeader': {'fileDesc': {'none': 3},
+      'titleStmt': {'none': 3},
+      'title': {'none': 3},
+      'publicationStmt': {'none': 3},
+      'publisher': {'none': 3},
+      'sourceDesc': {'none': 3},
+      'listPerson': {'none': 3},
+      'person': {'xml:id': 27},
+      'persName': {'none': 27},
+      'note': {'type': 81, 'subtype': 3, 'source': 3},
+      'listPlace': {'none': 3},
+      'place': {'xml:id': 15},
+      'placeName': {'none': 15}},
+     'text': {'body': {'none': 3},
+      'div': {'type': 9, 'none': 6},
+      'ab': {'style': 42, 'type': 45, 'xml:id': 45, 'none': 6},
+      'lb': {'style': 42, 'none': 18},
+      'seg': {'type': 69, 'xml:id': 69},
+      'add': {'xml:id': 30},
+      'note': {'target': 12, 'type': 12},
+      'p': {'none': 18},
+      'persName': {'corresp': 27},
+      'name': {'type': 9, 'xml:id': 9},
+      'placeName': {'corresp': 15}},
+     'facsimile': {'surface': {'source': 3},
+      'zone': {'xml:id': 42, 'ulx': 42, 'uly': 42, 'lrx': 42, 'lry': 42}}}
+
+## Wordタグの付与
+
+XMLファイルに含まれる文字列に対して、wタグを付与します。
+
+``` python
+input_path = "example/main.xml"
+results = TeiTools.addWordElement(input_path)
+TeiTools.save("example/main_with_word.xml", results)
+```
